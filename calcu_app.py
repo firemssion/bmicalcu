@@ -22,4 +22,4 @@ def bmi_calculator():
     return render_template('calcu.html', bmi=bmi, category=category)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
