@@ -9,7 +9,7 @@ def bmi_calculator():
     if request.method == 'POST':
         weight = float(request.form.get('weight'))
         height = float(request.form.get('height'))
-        bmi = round(weight / (height * height), 2)
+        bmi = round(weight / (height * height), 1)
         if bmi < 18.5:
             category = "Underweight"
         elif bmi <= 22.9:
